@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Child Safety Filter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Child Safety Filter</h1>
+    <div class="toggle-container">
+      <label class="switch" for="toggleExtension">
+        <input type="checkbox" id="toggleExtension" aria-label="Toggle Child Safety Filter">
+        <span class="slider round" role="presentation"></span>
+      </label>
+      <span id="statusText" aria-live="polite">Enabled</span>
+    </div>
+    <p id="description">The extension is currently blocking inappropriate content.</p>
+    <p id="errorMessage" style="color: red; display: none;"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
